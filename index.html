@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="arrow">
+        <button class="soundButton" id="arrow-button" onmouseover="playSound('arrow-audio')">
+            Arrow
+            <audio controls id="arrow-audio" src="arrow_x.wav"></audio>
+        </button>
+    </div>
+
+    <div id="bubble">
+        <button class="soundButton" id="bubble-button">
+            Bubble
+            <audio controls id="bubble-audio" src="bubbling1.wav" ></audio>
+        </button>
+    </div>
+
+    <div id="buzzer">
+        <button class="soundButton" id="buzzer-button">
+            Buzzer
+            <audio controls id="buzzer-audio" src="buzzer_x.wav"></audio>
+        </button>
+    </div>
+
+
+    <script src="soundboard.js"></script>
+</body>
+</html>

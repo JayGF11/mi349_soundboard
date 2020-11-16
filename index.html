@@ -7,27 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="arrow">
-        <button class="soundButton" id="arrow-button" onmouseover="playSound('arrow-audio')">
-            Arrow
-            <audio controls id="arrow-audio" src="arrow_x.wav"></audio>
-        </button>
-    </div>
+    <audio id="arrows">
+        <source src="arrow_x.wav">
+    </audio>
+    <button id="arrow" onclick="playArrowSound()">Arrow Sound</button>
 
-    <div id="bubble">
-        <button class="soundButton" id="bubble-button">
-            Bubble
-            <audio controls id="bubble-audio" src="bubbling1.wav" ></audio>
-        </button>
-    </div>
+    <audio id="bubbles">
+        <source src="bubbling1.wav">
+    </audio>
+    <button id="bubble" onclick="playBubbleSound()">Bubble Sound</button>
 
-    <div id="buzzer">
-        <button class="soundButton" id="buzzer-button">
-            Buzzer
-            <audio controls id="buzzer-audio" src="buzzer_x.wav"></audio>
-        </button>
-    </div>
-
+    <audio id="buzzers">
+        <source src="buzzer_x.wav">
+    </audio>
+    <button id="buzzer" onclick="playBuzzerSound()">Buzzer Sound</button>
 
     <script src="soundboard.js"></script>
 </body>

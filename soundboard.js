@@ -1,20 +1,16 @@
-var arrowButtonElement = document.getElementById('arrow-button')
-var bubbleButtonElement = document.getElementById('bubble-button')
-var buzzerButtonElement = document.getElementById('buzzer-button')
+var arrowButton = document.getElementById('arrows')
+var bubbleButton = document.getElementById('bubbles')
+var buzzerButton = document.getElementById('buzzers')
 
-arrowButtonElement.addEventListener('click', function () {
-  console.log('I was clicked!')
-})
 
-bubbleButtonElement.addEventListener('click', function () {
-  console.log('I was clicked!')
-})
+function playArrowSound() {
+  arrowButton.play()
+}
 
-buzzerButtonElement.addEventListener('click', function () {
-  console.log('I was clicked!')
-})
+function playBubbleSound() {
+  bubbleButton.play()
+}
 
-function playSound(sound) {
-  var theSound = document.getElementById(sound);
-  theSound.Play();
+function playBuzzerSound() {
+  buzzerButton.play()
 }
